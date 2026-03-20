@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: #eee;
+    background-color: #FFFFFF;
     font-family: "Manrope";
     font-weight: 150%;
     font-size: 18px;
@@ -25,8 +25,18 @@ svg {
     color: var(--grey-text-2);
 }
 
+header {
+    border-bottom: .0625rem solid #DDDDDD;
+    padding-bottom: .5rem;
+    margin-right: 6.25rem;
+    margin-left: 6.25rem;
+    background-color: #EEEEEE;
+}
+
 .sub-menu {
     position: absolute;
+    left: 16.625rem;
+    top: 4rem;
     border: .0625rem solid var(--grey-text-2);
     background-color: #fff;
     box-shadow: 0 .25rem .25rem 0 #DDD;
@@ -54,6 +64,7 @@ h1 {
     font-weight: 150%;
     font-size: 1.25rem;
 }
+
 
 span {
     color: var(--blue-box);
