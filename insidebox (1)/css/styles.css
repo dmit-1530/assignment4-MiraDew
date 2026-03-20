@@ -1,3 +1,30 @@
+:root {
+    --blue-box: #0A91DE;
+    --grey-text: #727B81;
+}
+
+
 body {
     background-color: #eee;
+    font-family: "Manrope", "Nunito";
+}
+
+svg {
+    width: 1.6875rem;
+}
+
+.inner-container {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main-menu {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+h1 {
+
 }
