@@ -1,30 +1,85 @@
 :root {
     --blue-box: #0A91DE;
     --grey-text: #727B81;
+    --grey-text-2: #666F74;
 }
 
 
 body {
     background-color: #eee;
-    font-family: "Manrope", "Nunito";
+    font-family: "Manrope";
+    font-weight: 150%;
+    font-size: 18px;
+    color: var(--grey-text-2);
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: "Manrope";
+    font-weight: bold;
+    color: var(--grey-text);
 }
 
 svg {
     width: 1.6875rem;
+    color: var(--grey-text-2);
 }
 
-.inner-container {
-    max-width: 65rem;
-    margin: 0 auto;
-    padding: 1rem;
+.sub-menu {
+    position: absolute;
+    border: .0625rem solid var(--grey-text-2);
+    background-color: #fff;
+    box-shadow: 0 .25rem .25rem 0 #DDD;
+    border-radius: .4375rem;
+    padding: 1.125rem;
+    min-width: 10.875rem;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
 }
 
-.main-menu {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 1rem;
+.sub-menu li {
+    border-bottom: .0625rem solid #DDDDDD;
+    padding-bottom: .5rem;
 }
+
+.sub-menu li:last-of-type {
+    border: none;
+}
+
 
 h1 {
+    font-family: "Nunito";
+    font-weight: 150%;
+    font-size: 1.25rem;
+}
 
+span {
+    color: var(--blue-box);
+}
+
+a {
+text-decoration: none;
+color: var(--grey-text-2);
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    background-color: #FFFFFF;
+    border: .0625rem solid #DDDDDD;
+    width: 14.5rem;
+    height: 63.9375rem;
+}
+
+svg {
+    fill: #FFFFFF;
+}
+
+.main-menu li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
 }
